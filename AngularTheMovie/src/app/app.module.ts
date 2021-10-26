@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ActorItemComponent } from './actor-item/actor-item.component';
+import { ActorListComponent } from './actor-list/actor-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesPopularListComponentComponent,
     MoviesItemComponentComponent,
-    ActorItemComponent
+    ActorItemComponent,
+    ActorListComponent
   ],
   imports: [
     BrowserModule,

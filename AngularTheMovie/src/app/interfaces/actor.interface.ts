@@ -1,4 +1,4 @@
-export interface Actor {
+export interface PeliculaActuan {
     poster_path: string;
     adult: boolean;
     overview: string;
@@ -20,18 +20,18 @@ export interface Actor {
     original_name: string;
 }
 
-export interface ListaActores {
+export interface Actores {
     profile_path: string;
     adult: boolean;
     id: number;
-    known_for: Actor[];
+    known_for: PeliculaActuan[];
     name: string;
     popularity: number;
 }
 
-export interface ListaListaActores{
+export interface ListaActores{
     page: number;
-    results: ListaActores[];
+    results: Actores[];
     total_results: number;
     total_pages: number;
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PeliculaResponse, Result } from 'src/app/interfaces/pelicula.interface';
+import { Result } from 'src/app/interfaces/pelicula.interface';
 import { TheMovieServiceDBService } from 'src/app/services/the-movie-service-db.service';
 
 @Component({
