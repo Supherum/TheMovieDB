@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Pelicula } from 'src/app/interfaces/pelicula.interface';
+import { PeliculaResponse, Result } from 'src/app/interfaces/pelicula.interface';
+import { TheMovieServiceDBService } from 'src/app/services/the-movie-service-db.service';
 
 @Component({
   selector: 'app-movies-popular-list-component',
@@ -8,11 +9,15 @@ import { Pelicula } from 'src/app/interfaces/pelicula.interface';
 })
 export class MoviesPopularListComponentComponent implements OnInit {
 
-  listaPeliculas:Pelicula[] | undefined;
+  listaPeliculas:Result[] | undefined=[];
+  
 
-  constructor() { }
+  constructor(private movieService:TheMovieServiceDBService) { }
 
   ngOnInit(): void {
+    this.movieService.getPopularMovies().subscribe(resultadoPelicula=> {
+      this.listaPeliculas=resultadoPelicula.results;
+    });
   }
 
 }
