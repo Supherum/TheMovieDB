@@ -12,7 +12,7 @@ export class ActorServicioService {
   constructor(private http:HttpClient) { }
 
   getActores():Observable<ListaActores>{
-    let url=environment.urlImage;
+    let url=environment.urlBase;
     let key=environment.apikey;
     return this.http.get<ListaActores>(`${url}/person/popular?api_key=${key}`)
   }

@@ -9,8 +9,8 @@ import { MaterialImportsModule } from './modules/material-imports.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ActorItemComponent } from './actor-item/actor-item.component';
-import { ActorListComponent } from './actor-list/actor-list.component';
+import { ActorItemComponent } from './components/actor-item/actor-item.component';
+import { ActorListComponent } from './components/actor-list/actor-list.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { ActorListComponent } from './actor-list/actor-list.component';
     MaterialImportsModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

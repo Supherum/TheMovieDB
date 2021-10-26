@@ -12,8 +12,8 @@ export class TheMovieServiceDBService {
   constructor(private http:HttpClient) { }
 
   getPopularMovies():Observable<PeliculaResponse>{
-    let url=`${environment.urlBase}`;
-    let key=`${environment.apikey}`;
+    let url=environment.urlBase;
+    let key=environment.apikey;
     return this.http.get<PeliculaResponse>(`${url}/movie/popular?api_key=${key}`);
   }
 }
