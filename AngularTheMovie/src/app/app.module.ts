@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ActorItemComponent } from './components/actor-item/actor-item.component';
 import { ActorListComponent } from './components/actor-list/actor-list.component';
+import { SideMenuComponent } from './shared/side-menu/side-menu.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ActorListComponent } from './components/actor-list/actor-list.component
     MoviesPopularListComponentComponent,
     MoviesItemComponentComponent,
     ActorItemComponent,
-    ActorListComponent
+    ActorListComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,
