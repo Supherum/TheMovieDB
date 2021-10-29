@@ -1,0 +1,9 @@
+.center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.mitad{
+    width: 49%;
+}

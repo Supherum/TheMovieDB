@@ -1,0 +1,27 @@
+<ng-container *ngIf="pelicula">
+    <h1 mat-dialog-title>{{pelicula.title}}</h1>
+    <div mat-dialog-content>
+        <div class="center">
+            <img [src]="verImagen(pelicula.poster_path)" width="150px" />
+
+        </div> 
+    </div><br>
+    
+    <div class="flex">
+        <div class="mitad">
+            <h3>GÉNEROS</h3>
+            <ul>
+                <li *ngFor="let generos of pelicula.genres">{{generos.name}} </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Idiomas</h3>
+            <ul>
+                <li *ngFor="let lengua of pelicula.spoken_languages">{{lengua.name}} </li>
+            </ul>
+        </div>
+       
+    </div>
+    <h3>Lanzamiento</h3>
+    {{pelicula.release_date}}
+</ng-container>

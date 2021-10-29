@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ActorItemComponent } from './components/actor-item/actor-item.component';
 import { ActorListComponent } from './components/actor-list/actor-list.component';
 import { SideMenuComponent } from './shared/side-menu/side-menu.component';
+import { DialogMovieDetailComponent } from './dialogs/dialog-movie-detail/dialog-movie-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SideMenuComponent } from './shared/side-menu/side-menu.component';
     MoviesItemComponentComponent,
     ActorItemComponent,
     ActorListComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    DialogMovieDetailComponent
   ],
   imports: [
     BrowserModule,
